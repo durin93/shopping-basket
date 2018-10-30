@@ -24,4 +24,7 @@ public class Goods {
     @Embedded
     private Shipping shipping;
 
+    public int getPrice() {
+        return price;
+    }
 }
