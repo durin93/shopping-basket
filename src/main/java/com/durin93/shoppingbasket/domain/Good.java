@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Goods {
+public class Good {
 
     @Id
     @GeneratedValue
@@ -19,10 +19,11 @@ public class Goods {
     private int price;
 
     @Embedded
-    private Options options;
+    private Option option;
 
     @Embedded
     private Shipping shipping;
+
 
     public int getPrice() {
         return price;

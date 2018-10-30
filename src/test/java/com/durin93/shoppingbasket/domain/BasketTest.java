@@ -10,9 +10,17 @@ public class BasketTest {
 
     private Basket basket;
 
+    private Good product1;
+
     @Before
     public void setUp() {
         basket = new Basket();
+        product1 = new Good();
+    }
+
+    @Test
+    public void addGoods(){
+        assertThat(basket.addGood(product1), is(basket));
     }
 
     @Test
